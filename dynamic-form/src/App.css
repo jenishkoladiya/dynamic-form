@@ -1,0 +1,103 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 600px; /* Reduced width */
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem; /* Reduced padding */
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem; /* Smaller title font */
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  font-size: 1.4rem; /* Smaller button font */
+  padding: 8px 16px; /* Reduced button padding */
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button[type="button"] {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  width: 100%;
+  font-size: 1.6rem; /* Reduced submit button font */
+}
+
+button.remove-btn {
+  background-color: #f44336;
+  color: white;
+  font-size: 1.2rem; /* Smaller remove button font */
+  padding: 5px 10px; /* Smaller padding */
+}
+
+button.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Reduced gap between rows */
+}
+
+.row {
+  display: flex;
+  gap: 0.8rem; /* Reduced gap between inputs */
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px; /* Reduced padding */
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  flex: 1;
+  padding: 6px 10px; /* Reduced input padding */
+  font-size: 1.4rem; /* Smaller input font */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button.remove-btn {
+    margin-top: 5px;
+    align-self: flex-end;
+  }
+}
